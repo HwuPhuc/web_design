@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 3</title>
+</head>
+
+<body>
+    <form action="contact.php" method="post">
+        <table border="1">
+            <tr bgcolor="cyan">
+                <td>
+                    <h1>Contact Us</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fullname" placeholder="Enter Your Name" maxlength="30" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="Enter Your Email" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="tel" name="phonenumber" placeholder="Enter Phone Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="age" placeholder="Enter Your Age" min="1" max="100" step="1" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" name="date" placeholder="Date" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea placeholder="Message" name="message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="lime">
+                    <input type="submit" value="Send" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

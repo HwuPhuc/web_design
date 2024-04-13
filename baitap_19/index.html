@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập về LIST, TABLE, FORM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blanchedalmond;
+            font-size: 90%;
+        }
+
+        h1 {
+            background-color: rgb(244, 193, 116);
+            color: rgb(41, 171, 215);
+            padding: 20px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        ul {
+            font-size: 15px;
+            line-height: 20px;
+            list-style-type: square;
+        }
+
+        table {
+            width: 90%;
+            border-spacing: 0px;
+        }
+
+        th,
+        td {
+            border-spacing: 0px;
+            border: 1px solid black;
+            padding: 5px 10px 5px 10px;
+            text-align: left;
+            margin: 0px;
+            font-size: 15px;
+            line-height: normal;
+        }
+
+        tr.head th {
+            color: aliceblue;
+            background-color: rgb(60, 114, 200);
+            border-bottom: 3px solid rgb(223, 220, 30);
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        tr {
+            background-color: rgb(159, 223, 223);
+        }
+
+        tr.even {
+            background-color: rgb(96, 188, 188);
+        }
+
+        tr.head th:first-child {
+            -webkit-border-top-left: 10px;
+            -moz-border-radius-topleft: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        tr.head th:last-child {
+            -webkit-border-top-right: 10px;
+            -moz-border-radius-topright: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        tr:last-child th:first-child {
+            -webkit-border-bottom-left: 10px;
+            -moz-border-radius-bottomleft: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        tr:last-child td:last-child {
+            -webkit-border-bottom-right: 10px;
+            -moz-border-radius-bottomright: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        fieldset {
+            width: 500px;
+            padding: 20px;
+            font-size: 100%;
+            line-height: 20px;
+            margin: 10px 0px 10px 0px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: rgb(239, 172, 114);
+        }
+
+        legend {
+            border: 2px solid black;
+            padding: 5px 10px 5px 10px;
+            border-radius: 10px;
+            font-size: 100%;
+            font-style: italic;
+            background-color: rgb(88, 191, 246);
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 3px;
+        }
+
+        input[type="text"]:hover {
+            border: 2px solid green;
+        }
+
+        input[type="text"]:focus {
+            border: 2px solid green;
+            background-color: lightgray;
+            color: black;
+        }
+
+        input[type="submit"] {
+            border-radius: 5px;
+            padding: 5px 10px 5px 10px;
+            border: 2px solid black;
+        }
+
+        input[type="submit"]:hover {
+            border: 3px solid black;
+            background-color: bisque;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Các Buổi Chiếu Phim Miễn Phí</h1>
+    <p>Chúng tôi sẽ tổ chức một số buổi chiếu phim miễn phí cho cộng đồng.</p>
+    <p>Vui lòng lưu ý rằng các sự kiện sau đây miễn phí cho mọi người tham dự:</p>
+    <ul>
+        <li>Biệt Đội Siêu Anh Hùng</li>
+        <li>Cô Ba Sài Gòn</li>
+        <li>Em Chưa 18</li>
+        <li>Tiệc trăng máu</li>
+    </ul>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr>
+            <th>Biệt Đội Siêu Anh Hùng</th>
+            <td>Thứ Bảy, 4 Tháng Hai 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 3 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 17 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even">
+            <th>Cô Ba Sài Gòn</th>
+            <td>Thứ Bảy, 7 Tháng Tư 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 5 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 19 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+        </tr>
+        <tr>
+            <th>Em Chưa 18</th>
+            <td>Thứ Bảy, 9 Tháng Sáu 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 7 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 21 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even">
+            <th>Tiệc Trăng Máu</th>
+            <td>Thứ Bảy, 4 Tháng Tám 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 8 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 15 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+        </tr>
+    </table>
+    <br />
+    <form action="http://www.example.com/form.php" method="get">
+        <fieldset>
+            <legend>Đăng ký sự quan tâm của bạn</legend>
+            <p><label class="title" for="name">Tên của bạn:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name"><br />
+                <label class="title" for="email">Email của bạn:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+            </p>
+            <p><label for="location" class="title">Rạp chiếu phim gần nhất của bạn:</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+            <span class="title">Bạn có muốn nhận thông tin từ chúng tôi không?</span>
+            <label><input type="radio" name="member" value="yes" /> Có</label>
+            <label><input type="radio" name="member" value="no" /> Không</label></p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Đăng ký" /></div>
+    </form>
+</body>
+
+</html>

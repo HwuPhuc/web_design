@@ -1,0 +1,12 @@
+body{
+    background-color: lightcyan;
+}
+h1{
+    color:red;
+    font-style: italic;
+}
+p{
+    color:blueviolet;
+    font-size:15px;
+    background-color: bisque;
+}
